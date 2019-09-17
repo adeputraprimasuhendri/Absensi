@@ -1,5 +1,7 @@
 # Absensi
-Aplikasi Absensi
+Aplikasi Absensi sederhana menggunakan Camera dan Geolocation
+
+
 
 ## Tambahkan Plugin Camera
 
