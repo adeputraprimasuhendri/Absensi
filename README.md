@@ -1,14 +1,14 @@
 # Absensi
 Aplikasi Absensi
 
-# Tambahkan Plugin Camera
+## Tambahkan Plugin Camera
 
-ionic cordova plugin add cordova-plugin-camera
+- ionic cordova plugin add cordova-plugin-camera
 
-npm install @ionic-native/camera
+- npm install @ionic-native/camera
 
-# Tambahkan Plugin Geolocation
+## Tambahkan Plugin Geolocation
 
-ionic cordova plugin add cordova-plugin-geolocation
+- ionic cordova plugin add cordova-plugin-geolocation
 
-npm install @ionic-native/geolocation
+- npm install @ionic-native/geolocation
