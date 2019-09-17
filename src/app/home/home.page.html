@@ -1,14 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Absensi Camera & Geolocation
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-button expand="block" fill="outline" (click)="openCamera()">Open Camera</ion-button>
+    <ion-button expand="block" fill="outline" (click)="getLocation()">Location</ion-button>
+  </div>
+  <div class="ion-padding">
+    {{lokasi}}
   </div>
 </ion-content>
