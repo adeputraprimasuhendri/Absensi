@@ -1,0 +1,31 @@
+<ion-header no-border>
+    <ion-toolbar>
+      <ion-buttons routerLink="/karyawan" size="large" slot="start" padding>
+        <ion-icon name="md-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </ion-buttons>
+      <ion-title>Data Karyawan</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+    <div padding>
+        <h4 padding>Masukkan data dengan benar</h4>
+        <ion-list>
+          <ion-item>
+            <ion-label position="stacked">NIP</ion-label>
+            <ion-input [(ngModel)]="data.nip" type="tel" placeholder="Cth: 123456"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Nama Lengkap</ion-label>
+            <ion-input [(ngModel)]="data.nama" type="text" placeholder="Cth: Ade Putra Prima"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="stacked">Bagian</ion-label>
+              <ion-input [(ngModel)]="data.bagian" type="text" placeholder="Cth: Keuangan"></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-button expand="full" (click)="simpan()">Lanjut</ion-button>
+      </div>
+
+</ion-content>

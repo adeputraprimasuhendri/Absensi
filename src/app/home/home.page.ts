@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { DatabaseService } from '../services/database.service';
+import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ import { DatabaseService } from '../services/database.service';
 })
 export class HomePage {
   lokasi:any;
-  constructor(private db:DatabaseService, private camera: Camera, private geolocation: Geolocation) { }
+  constructor(private db:DatabaseService, private camera: Camera, private geolocation: Geolocation, private route: ActivatedRoute, private router: Router) { }
 
   openCamera() {
     const options: CameraOptions = {
@@ -34,6 +35,12 @@ export class HomePage {
      }).catch((error) => {
        console.log(error);
      });
+  }
+
+  karyawan(){
+    let navigationExtras: NavigationExtras = {
+    };
+    this.router.navigateByUrl('/karyawan', navigationExtras);
   }
 
 }

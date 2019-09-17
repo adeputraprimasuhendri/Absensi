@@ -1,0 +1,27 @@
+<ion-header no-border>
+    <ion-toolbar>
+      <ion-buttons routerLink="/home" size="large" slot="start" padding>
+        <ion-icon name="md-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </ion-buttons>
+      <ion-title>Data Karyawan</ion-title>
+      <ion-buttons (click)="tambah()" size="large" slot="end" padding>
+        <ion-icon name="md-add" md="md-add"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <div>
+      <ion-card *ngFor="let data of data">
+          <ion-card-header>
+            <ion-card-title>{{data.nama}}</ion-card-title>
+            <ion-card-subtitle>{{data.nip}}</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+              <ion-button expand="block" fill="outline" (click)="hapus(data.id)">Hapus</ion-button>
+          </ion-card-content>
+        </ion-card>
+  </div>
+
+</ion-content>
